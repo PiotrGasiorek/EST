@@ -12,6 +12,8 @@ Sections:
     --color-primary: #333333;
     --color-secondary: #ffffff;
     --color-tertiary: #CFCFCF;
+
+    --fontFamily: Muli;
 }
 
 html, body{
@@ -22,6 +24,7 @@ html, body{
 
 *{
     box-sizing: border-box;
+    font-family: var(--fontFamily);
 }
 
 .container{
@@ -115,6 +118,14 @@ html, body{
     border-color:  var(--color-secondary);
 }
 
+.btn--tertiary:hover{
+    border: 2px solid  var(--color-secondary);
+}
+
+.btn--tertiary:focus{
+    border: 2px solid  var(--color-secondary);
+}
+
 .btn--primary{
     background: var(--color-secondary);
     border: 2px solid var(--color-secondary);
@@ -125,6 +136,13 @@ html, body{
     background: transparent;
     color: var(--color-secondary);
     border: 2px solid var(--color-secondary);
+}
+
+.btn--tertiary{
+    background: transparent;
+    color: var(--color-secondary);
+    text-decoration: underline;
+    border: 2px solid transparent;
 }
 
 /* Media queries */
