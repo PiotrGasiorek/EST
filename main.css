@@ -152,4 +152,8 @@ html, body{
     .title--big{
         font-size: 40px;
     }
+
+    .header{
+        background-position: center right;
+    }
 }
